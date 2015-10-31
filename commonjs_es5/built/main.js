@@ -37,40 +37,30 @@ function asyncTaskCreator() {
     var p = new Promise(function (resolve) {
         setTimeout(function () {
             return resolve('done!');
-        }, 100);
+        }, 1000);
     });
     return p;
 }
-function task1() {
+function exec() {
     return __awaiter(this, void 0, Promise, regeneratorRuntime.mark(function _callee() {
+        var result;
         return regeneratorRuntime.wrap(function _callee$(_context) {
             while (1) switch (_context.prev = _context.next) {
                 case 0:
+                    console.log('This waits a second.');
+                    _context.next = 3;
+                    return asyncTaskCreator();
+
+                case 3:
+                    result = _context.sent;
+
+                    console.log(result);
+
+                case 5:
                 case "end":
                     return _context.stop();
             }
         }, _callee, this);
-    }));
-}
-function exec() {
-    return __awaiter(this, void 0, Promise, regeneratorRuntime.mark(function _callee2() {
-        var result;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-            while (1) switch (_context2.prev = _context2.next) {
-                case 0:
-                    _context2.next = 2;
-                    return asyncTaskCreator();
-
-                case 2:
-                    result = _context2.sent;
-
-                    console.log(result);
-
-                case 4:
-                case "end":
-                    return _context2.stop();
-            }
-        }, _callee2, this);
     }));
 }
 ;

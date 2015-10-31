@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "../node_modules/typescript/bin/tsc -p .; node node_modules/babel-cli/bin/babel .tmp-ts --out-dir built",
+    "start": "npm run build; node built/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

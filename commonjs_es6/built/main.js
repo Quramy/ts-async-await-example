@@ -14,16 +14,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, Promi
 };
 function asyncTaskCreator() {
     var p = new Promise(resolve => {
-        setTimeout(() => resolve('done!'), 100);
+        setTimeout(() => resolve('done!'), 1000);
     });
     return p;
 }
-function task1() {
-    return __awaiter(this, void 0, Promise, function* () {
-    });
-}
 function exec() {
     return __awaiter(this, void 0, Promise, function* () {
+        console.log('This waits a seconde.');
         var result = yield asyncTaskCreator();
         console.log(result);
     });
