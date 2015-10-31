@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "umd",
+        "target": "es6",
+        "noImplicitAny": true,
+        "outDir": ".tmp-ts",
+        "rootDir": ".",
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

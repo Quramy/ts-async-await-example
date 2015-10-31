@@ -1,0 +1,16 @@
+{
+  "name": "commonjs_es5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "../node_modules/typescript/bin/tsc -p .; node node_modules/babel-cli/bin/babel .tmp-ts --out-dir built",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.0.14"
+  }
+}
