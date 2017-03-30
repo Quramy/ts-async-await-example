@@ -2,6 +2,8 @@
 This repository has example projects using TypeScript `async/await`.
 
 ## How to run
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Quramy/ts-async-await-example.svg)](https://greenkeeper.io/)
 Select the following directory, and `npm install; npm start`.
 
 + commonjs_es6:  
